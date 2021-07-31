@@ -11,7 +11,7 @@ export const Modal = props => {
 			<div className="modal-dialog" role="document">
 				<div className="modal-content">
 					<div className="modal-header">
-						<h5 className="modal-title">Are you sure?</h5>
+						<h5 className="modal-title">Are you sure want to delete {props.name}?</h5>
 						{props.onClose ? (
 							<button
 								onClick={() => props.onClose()}
@@ -48,7 +48,8 @@ export const Modal = props => {
 Modal.propTypes = {
 	history: PropTypes.object,
 	onClose: PropTypes.func,
-	show: PropTypes.bool
+	show: PropTypes.bool,
+	name: PropTypes.string
 };
 
 /**
