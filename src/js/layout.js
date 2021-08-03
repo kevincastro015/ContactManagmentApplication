@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 // import ScrollToTop from "./component/scrollToTop";
 
 import injectContext from "./store/appContext";
-
+import Login from "../js/views/home";
 import { Contacts } from "./views/Contacts.js";
 import { AddContact } from "./views/AddContact.js";
 import { EditContact } from "./views/EditContact.js";
